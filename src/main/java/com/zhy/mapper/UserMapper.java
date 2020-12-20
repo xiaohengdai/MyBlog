@@ -60,6 +60,9 @@ public interface UserMapper {
     @Select("select id from user where username=#{username}")
     int findIdByUsername(String username);
 
+    @Select("select id from user where trueName=#{trueName}")
+    int findIdByTrueName(String trueName);
+
     @Update("update user set recentlyLanded=#{recentlyLanded} where phone=#{phone}")
     void updateRecentlyLanded(@Param("phone") String phone, @Param("recentlyLanded") String recentlyLanded);
 

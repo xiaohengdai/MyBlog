@@ -80,6 +80,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public int findIdByTrueName(String trueName) {
+        return userMapper.findIdByTrueName(trueName);
+    }
+
+//    @Override
+//    public int findIdByTrueName(String trueName) {
+//        return userMapper.findIdByTrueName(trueName);
+//    }
+
+    @Override
     public User findUsernameByPhone(String phone) {
         return userMapper.findUsernameByPhone(phone);
     }

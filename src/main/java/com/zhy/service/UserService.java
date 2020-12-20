@@ -60,6 +60,13 @@ public interface UserService {
     int findIdByUsername(String username);
 
     /**
+     * 通过用户名查找id
+     * @param truename
+     * @return
+     */
+    int findIdByTrueName(String trueName);
+
+    /**
      * 通过手机号查找用户名
      * @param phone 手机号
      * @return 用户名
